@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["github-actions", "custom.jsonata"],
+  "customManagers": [
+    {
+      "customType": "jsonata",
+      "fileFormat": "yaml",
+      "managerFilePatterns": ["/^config/(\\w+/)?versions\\.yml$/"],
+      "matchStrings": [
+        "packages.*.{ \"depName\": depName, \"currentValue\": version, \"datasource\": datasource }"
+      ]
+    }
+  ]
+}

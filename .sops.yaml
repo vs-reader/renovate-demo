@@ -1,0 +1,4 @@
+creation_rules:
+  - path_regex: '^config/keys\.yml$'
+    age: 'age1l5jz9gjdsy7jzm3r4c537dfac5cz2apjdtq608rptzp9ecclxqxsm0r722'
+    

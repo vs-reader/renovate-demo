@@ -3,4 +3,4 @@ packages:
   nginx:
     depName: nginx
     datasource: docker
-    version: "1.26.0"
+    version: "1.31.7"
